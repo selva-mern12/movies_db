@@ -1,0 +1,20 @@
+.main-bg-popular-page {
+  background-color: #3b3c36;
+  height: 100vh;
+}
+.popular-container {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-page {
+  list-style-type: none;
+  margin: 10px 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  height: 80vh;
+  width: 93vw;
+  max-width: 95vw;
+  flex-wrap: wrap;
+}

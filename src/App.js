@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import {
+  PopularMoviesPage,
+  TopRatedMoviesPage,
+  UpcomingMoviesPage,
+} from './components/MovieDBMainPage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import SingleMoviePage from './components/SingleMoviePage'
 
-export default App;
+import './App.css'
+
+const App = () => (
+  <Routes>
+    <Route path="/" element={<PopularMoviesPage />} />
+    <Route path="/top-rated" element={<TopRatedMoviesPage />} />
+    <Route path="/upcoming" element={<UpcomingMoviesPage />} />
+    <Route path="/movie/:movieId" element={<SingleMoviePage />} />
+  </Routes>
+)
+
+export default App
