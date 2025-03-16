@@ -13,6 +13,8 @@
   box-shadow: 0px 0px 10px #000000;
   background-color: #ffffff50;
   border: #fff 1px solid;
+  scroll-margin-top: 10vh;
+  position: relative;
 }
 .carousel {
   height: 250px;
@@ -73,31 +75,66 @@
   text-decoration: none;
   color: inherit;
 }
-/* Button Styling */
 button {
   margin: 0px 0px 0px 15px;
-  padding: 5px 15px; /* Smaller padding for a compact button */
+  padding: 5px 15px;
   font-size: 14px;
-  background-color: #007bff; /* Simple blue color */
-  color: white; /* Text color */
-  border: #fff 1px solid; /* No border */
-  border-radius: 7px; /* Small rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth background change */
+  background-color: #007bff;
+  color: white;
+  border: #fff 1px solid;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-/* Button Hover Effect */
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
-
-/* Button Focus Effect */
 button:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.7); /* Light blue outline on focus */
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.7);
+}
+button:active {
+  background-color: #004085;
 }
 
-/* Button Active State (when clicked) */
-button:active {
-  background-color: #004085; /* Even darker blue when clicked */
+@media screen and (max-width: 768px) {
+  .movie-item-list {
+    width: 350px;
+  }
+  .carousel {
+    width: 348px;
+  }
+  .movie-name {
+    font-size: 18px;
+  }
+  .movie-description {
+    font-size: 14px;
+  }
+  button {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movie-item-list {
+    width: 280px;
+  }
+  .carousel {
+    width: 278px;
+    height: 200px;
+  }
+  .movie-imge {
+    height: 200px;
+  }
+  .movie-name {
+    font-size: 16px;
+  }
+  .movie-description {
+    font-size: 13px;
+  }
+  button {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
 }

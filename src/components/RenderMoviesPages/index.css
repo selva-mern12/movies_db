@@ -18,3 +18,27 @@
   max-width: 95vw;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+  .main-bg-popular-page {
+    height: auto;
+    min-height: 100vh;
+  }
+  .popular-page {
+    height: auto;
+    width: 90vw;
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-bg-popular-page {
+    height: auto;
+    min-height: 100vh;
+  }
+  .popular-page {
+    height: auto;
+    width: 85vw;
+    max-width: 85vw;
+  }
+}

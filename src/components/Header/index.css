@@ -1,3 +1,4 @@
+/* Existing Large Screen Styles */
 .header-container {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,8 @@
   padding: 10px 0px;
   background-color: #333333;
   box-shadow: 0px 0px 10px #ffffff;
+  position: sticky;
+  z-index: 1000;
 }
 .logo-container {
   width: 100vw;
@@ -20,10 +23,8 @@
   color: red;
   text-decoration: none;
   height: 55px;
-  margin-bottom: 30px;
   filter: drop-shadow(0px 0px 3px #080841);
 }
-
 .icon-container {
   display: inline-flex;
   position: relative;
@@ -59,7 +60,6 @@
 .hide-search-box {
   visibility: hidden;
 }
-
 .navbar-container {
   list-style-type: none;
   margin: 0px;
@@ -69,7 +69,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .navbars {
   color: #ffff00;
   border-radius: 20px;
@@ -92,4 +91,60 @@
   background-color: #ffffff;
   border: #180734 1px solid;
   box-shadow: 0px 0px 10px #fff;
+}
+
+/* Medium Screen Styles (Tablets) */
+@media screen and (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-container {
+    width: 50vw;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .navbar-container {
+    width: 90%;
+  }
+  .navbars {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+
+/* Small Screen Styles (Mobile Devices) */
+@media screen and (max-width: 480px) {
+  .header-container {
+    padding: 5px 0px;
+  }
+  .logo-container {
+    gap: 5px;
+  }
+  .app-title {
+    font-size: 24px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .search-container {
+    width: 80vw;
+  }
+  .search-input {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+  }
+  .search-icon {
+    font-size: 28px;
+  }
+  .navbar-container {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .navbars {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
 }

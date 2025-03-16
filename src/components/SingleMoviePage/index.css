@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .single-page-header {
   display: flex;
   flex-direction: row;
@@ -199,7 +198,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   color: #e5afaf;
 }
-
 .cast-img {
   width: 50px;
   border-radius: 7px;
@@ -228,4 +226,99 @@ html {
   font-size: 15px;
   color: #ffffff;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .single-page-container {
+    margin: 0px 50px;
+  }
+  .single-page-header {
+    width: 80vw;
+  }
+  .single-page-heading {
+    font-size: 28px;
+  }
+  .single-page-tagline {
+    font-size: 16px;
+  }
+  .single-movie-carousel {
+    height: 300px;
+    width: 530px;
+  }
+  .image {
+    height: 300px;
+  }
+  .genre-list {
+    width: 70vw;
+  }
+  .overview {
+    width: 90%;
+  }
+  .budget-collection {
+    width: 70vw;
+  }
+  .company-name {
+    width: 250px;
+  }
+  .cast-crew-container {
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-page-container {
+    margin: 0px 20px;
+    padding: 15px;
+  }
+  .single-page-header {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .single-page-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+  .single-page-tagline {
+    font-size: 14px;
+    text-align: center;
+  }
+  .movie-rdt-container {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .single-movie-carousel {
+    height: 200px;
+    width: 330px;
+  }
+  .image {
+    height: 200px;
+  }
+  .genre-list {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .genre {
+    margin: 5px;
+  }
+  .overview {
+    width: 100%;
+  }
+  .budget-collection {
+    width: 80vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .company-name {
+    width: 150px;
+    margin-left: 20px;
+  }
+  .cast-crew-container {
+    height: 1000px;
+    margin: 10px;
+  }
+  .crew-headings {
+    font-size: 14px;
+  }
 }
